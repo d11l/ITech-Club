@@ -1,4 +1,3 @@
-
 /* Start Sitting box */
 let gear = document.querySelector('#gear') ;
 
@@ -88,8 +87,6 @@ e.target.classList.add('active');
 })
  
 
-
-
 // Switch background 
 
 let landing = document.querySelector('.landing');
@@ -112,18 +109,14 @@ document.querySelector('.muni').addEventListener('click',() =>{
     landing.style.backgroundImage = `url(Imgs/${arrOFbac[ibac]})`;  
     localStorage.setItem('ibac',ibac) ;
 });    
-
-
 /* End Sitting box */ 
 
-// Change Style
 
+/* Change Style - Founding Day */
 let overlay = document.querySelector('.overlay');
 let allinks =  document.querySelectorAll('.header .links li a');
 let seLogo = document.querySelector('.se-logo img');
 let Logo = document.querySelector('.logo img');
-     
-
 
 
 
@@ -163,15 +156,15 @@ fDay.addEventListener('click',()=>{
    r++;
   }
 });
-/* End Change Style */
+/* End Change Style - Founding Day */
 
 
 
+
+/*  Start Gallery  */
 
 // Create Popup with the image
-
 let gal = document.querySelectorAll('.gallery img');
-
 
 gal.forEach(img =>{
 
@@ -223,8 +216,9 @@ if(e.target.className == "close_button"){
 }
 });
 
+/*  End Gallery  */
 
-//--------------------------------
+/* Start menu butten */ 
 let linksa = document.querySelectorAll('.links li a');
 
 document.querySelector('.toggle-menu').addEventListener('click', () => {
@@ -239,4 +233,5 @@ linksa.forEach((link) => {
     document.querySelector('.links').classList.toggle('open')
     document.querySelector('.toggle-menu i ').classList.toggle('fa-x');
     });
-})
+}) 
+/* End menu butten */
