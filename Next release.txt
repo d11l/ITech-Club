@@ -231,4 +231,68 @@
     margin: 0;
   }
   /* End Testimonials */
+
+//=========================================================================================
+
+<!-- Start Thanks -->
+
+    <div class="thanks">
+      <div class="container">
+    
+        <h2>شكرا لكم لرعايتنا</h2>
+
+        <div class="progress">
+          <img src="Imgs/kon.jpg" alt="" srcset="">
+          <img src="Imgs/heood.jpg" alt="" srcset="">
+          <img src="Imgs/rashid.jpg" alt="" srcset="">
+          <img src="Imgs/heood.jpg" alt="" srcset="">
+          <img src="Imgs/rashid.jpg" alt="" srcset="">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- End Thanks -->
+
+    
+/* Start Thanks */
+.thanks{
+  padding: 50px 0 ;
+  background-color: #e9e9e9;
+}
+
+
+.thanks h2{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.thanks .progress{
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 25px;
+
+}
+
+.thanks img{
+width: 200px;
+}
+
+/* End Thanks */
+
+
+//=========================================================================================
+
+
+
+//=========================================================================================
+
+
+
+//=========================================================================================
+
+
+
 //=========================================================================================
