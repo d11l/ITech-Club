@@ -30,6 +30,7 @@ html{
 
 body {
     font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
 }
 ::selection{
   background-color: var(--main-color);
@@ -239,6 +240,7 @@ cursor: pointer;
 /* End Sitting box  */
 
 
+
 /* Start Landing Page  */
 
 .landing{
@@ -310,9 +312,10 @@ padding: 0;
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 38px;
+    font-size: 2rem;
     margin-top: 20px;
     left: 0;
+
 }
 .toggle-menu:focus{
     outline: none;
@@ -328,10 +331,7 @@ padding: 0;
         mix-blend-mode: multiply;
 }
 
-.header .se-logo img{
-    width: 280px;
-   margin: 10px 30px;
-}
+
 
 .intro-text {
     position: absolute;
@@ -362,28 +362,30 @@ font-size: 16px;
 
 @media (max-width: 991px) {
   .header .links {
-  display: none;
-  }
+  background-color: #ffffff62;
+  padding: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -400px;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+  transition: .8s;
+}
   .header .links.open {
-    background-color: #ffffff62;
-    padding: 10px;
-    display: block;
-    position: absolute;
-    left: 0;
     top: 400px;
-    width: 100%;
-    border-radius: 4px;
-    text-align: center;
-    transition: .3s;
   }
 
-  .header .links.open li {
+  .header .links li {
     display: block;
     margin: 20px;
   }
-  .header .links.open li a {
+
+  .header .links li a{
     font-weight: bold;
   }
+
   .header .toggle-menu {
     display: inline-block;
   }
@@ -400,8 +402,7 @@ font-size: 16px;
   height: 110px;
   }
   
-  .header .logo-tu,
-  .header .se-logo{
+  .header .logo-tu{
       display: none;
   }
 
@@ -670,7 +671,10 @@ border-radius: 5px;
 }
 /* End Gallery */
 
- 
+
+
+
+
 /* Start Footer */
 .footer {
     background-color: #333;
@@ -685,3 +689,7 @@ border-radius: 5px;
     cursor: pointer;
   }
   /* End Footer */
+
+
+
+  
