@@ -112,52 +112,6 @@ document.querySelector('.muni').addEventListener('click',() =>{
 /* End Sitting box */ 
 
 
-/* Change Style - Founding Day */
-let overlay = document.querySelector('.overlay');
-let allinks =  document.querySelectorAll('.header .links li a');
-let seLogo = document.querySelector('.se-logo img');
-let Logo = document.querySelector('.logo img');
-
-
-
-let fDay = document.querySelector(".FoundingDay a") ;
-let r = 1 ;
-let arrOFimgs = ['Lan1.jpg','Lan3.jpg'];
-fDay.addEventListener('click',()=>{
-    //let r = Math.floor(Math.random() * arrOFimgs.length); 
-    landing.style.backgroundImage = `url(Imgs/${arrOFimgs[r]})`;    
-  if(r === 1){
-    landing.style.color = `#231f20`;
-    document.querySelector('.intro-text').style.backgroundColor = '#eeeeeee8'
-    //overlay.style.backgroundImage = `url(Imgs/)`;
-    allinks.forEach(e => e.style.color = `#6b4e45` );
-    gear.style.color = `#6b4e45`;
-    seLogo.src = "Imgs/FoundingDayBr.png";
-    Logo.src = "Imgs/logo-day27-removebg-preview.png";
-    document.querySelector('.logo-tu img').style.display = "none";
-    document.documentElement.style.setProperty('--main-color', "#6b4e45")
-    document.querySelector('.toggle-menu').style.color = "#6b4e45";
-    
-    r--;
-  }else{
-    landing.style.color = `white`;
-    document.querySelector('.intro-text h1').style.color = `var(--main-color)`;
-    document.querySelector('.intro-text').style.backgroundColor = '#eeeeee15'
-   //overlay.style.backgroundImage = `url(Imgs/)`;
-    allinks.forEach(e => { 
-    e.style.color = `white`;
-    document.documentElement.style.setProperty('--main-color', localStorage.getItem('color_option'))
-    });
-    gear.style.color = `white`;
-    seLogo.src = "Imgs/FoundingDay.png";
-    Logo.src = "Imgs/logo-removebg-preview.png";
-    document.querySelector('.logo-tu img').style.display = "block";
-    document.querySelector('.toggle-menu').style.color = "white";
-   r++;
-  }
-});
-/* End Change Style - Founding Day */
-
 
 
 
@@ -218,6 +172,8 @@ if(e.target.className == "close_button"){
 
 /*  End Gallery  */
 
+
+
 /* Start menu butten */ 
 let linksa = document.querySelectorAll('.links li a');
 
@@ -235,3 +191,10 @@ linksa.forEach((link) => {
     });
 }) 
 /* End menu butten */
+
+
+
+
+
+
+/*======================================================================*/
